@@ -39,9 +39,6 @@ function render(inputNum) {
       const colElm = document.createElement('td');
       if (row === col || row + col === arr.length - 1) {
         colElm.innerText = `${row},${col}`;
-        if (row === col && row + col === arr.length - 1) {
-          colElm.innerText = `${row}`;
-        }
       }
 
       rowElm.appendChild(colElm);
